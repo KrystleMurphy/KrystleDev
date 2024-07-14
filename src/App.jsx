@@ -1,5 +1,6 @@
 import React from "react";
 import bgImage from "../public/bgImage.jpg";
+import CV from "../public/CV.pdf";
 
 export default function ComingSoon() {
   return (
@@ -18,15 +19,29 @@ export default function ComingSoon() {
             checking back, I can't wait to share it with you!
           </p>
           <p className="mt-4">
-            If you can't wait, you can view an old portfolio:
-            <a href="https://reliable-arithmetic-010ab5.netlify.app" target="_blank" rel="noopener noreferrer">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2">
-                HERE
-              </button>
-            </a>However, I've come along way since then!
+            If you can't wait, you can 
+            <a 
+              href="https://reliable-arithmetic-010ab5.netlify.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
+            >
+              view an old portfolio
+            </a>
+            However, I've come a long way since then!
+          </p>
+          <p>
+            <a 
+              href={CV} 
+              download 
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
+            >
+              Download my CV
+            </a>
           </p>
         </div>
       </div>
     </div>
   );
 }
+
