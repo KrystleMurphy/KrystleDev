@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../public/bgImage.jpg"; 
+import bgImage from "../public/bgImage.jpg";
 
 export default function ComingSoon() {
   return (
@@ -12,10 +12,18 @@ export default function ComingSoon() {
         <div className="mt-6 text-lg">
           <h2 className="font-bold">🎉 Exciting News Ahead! 🎉</h2>
           <p className="mt-4">
-            Krystle's crafting something extraordinary for you! Stay tuned as we
-            gear up to unveil a stunning new showcase of cutting-edge creativity. From sleek designs to seamless interactions, get ready
+            I'm currently crafting something extraordinary for you! Stay tuned as we
+            gear up to unveil a stunning new showcase portfolio. From sleek designs to seamless interactions, get ready
             to explore the artistry of modern web development firsthand. Keep
-            checking back—we can't wait to share it with you!
+            checking back, I can't wait to share it with you!
+          </p>
+          <p className="mt-4">
+            If you can't wait, you can view an old portfolio:
+            <a href="https://reliable-arithmetic-010ab5.netlify.app" target="_blank" rel="noopener noreferrer">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2">
+                HERE
+              </button>
+            </a>However, I've come along way since then!
           </p>
         </div>
       </div>
