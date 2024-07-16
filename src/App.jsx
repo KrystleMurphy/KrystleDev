@@ -32,21 +32,21 @@ export default function ComingSoon() {
           </p>
           <p>
           <a 
-              href={CV} 
-              download 
-              target="_blank"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
-            >
-              View CV
-            </a>
-            <br></br>
-            <a 
-              href={CV} 
-              download 
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
-            >
-              Download a copy of Krystle's CV
-            </a>
+  href={CV} 
+  target="_blank"
+  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
+>
+  View CV
+</a>
+<br></br>
+<a 
+  href={CV} 
+  download 
+  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
+>
+  Download a copy of Krystle's CV
+</a>
+
        
           </p>
         </div>
