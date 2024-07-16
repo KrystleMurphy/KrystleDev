@@ -31,13 +31,23 @@ export default function ComingSoon() {
             However, I've come a long way since then!
           </p>
           <p>
+          <a 
+              href={CV} 
+              download 
+              target="_blank"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
+            >
+              View CV
+            </a>
+            <br></br>
             <a 
               href={CV} 
               download 
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 p-2 m-2 inline-block"
             >
-              Download my CV
+              Download a copy of Krystle's CV
             </a>
+       
           </p>
         </div>
       </div>
