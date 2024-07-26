@@ -1,7 +1,7 @@
 import CTA from "./components/CTA";
-import CCD from '../../../public/CCD.jpg';
-import currenCity from '../../../public/currenCity.jpg';
-import HC from '../../../public/HC.jpg';
+import CCD from './assets/CCD.jpg';
+import currenCity from './assets/currenCity.jpg';
+import HC from './assets/HC.jpg';
 
 const groupProjects = [
   {

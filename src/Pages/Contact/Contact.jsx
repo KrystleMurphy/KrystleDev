@@ -1,4 +1,4 @@
-import headshot from '../../../public/headshot.jpg';
+import headshot from './assets/headshot.jpg';
 import { useForm, ValidationError } from '@formspree/react';
 import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/20/solid';
 import { useNavigate } from 'react-router-dom';
