@@ -5,10 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Monoton: ["'Monoton'", 'serif'],
+        SpecialElite: ["'Special Elite'", 'serif']
+      }
+    },
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
   ],
 }
-
