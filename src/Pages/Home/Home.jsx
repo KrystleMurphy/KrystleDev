@@ -97,7 +97,7 @@ export default function Home() {
             >
               I’m Krystle, a Front-End Web Developer and founder of{' '}
               <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span>{' '}
-              in Warwick, UK. for websites where every detail is meticulously crafted
+              in Warwick, UK. For websites where every detail is meticulously crafted
               through a collaborative process, resulting in bespoke, responsive
               websites that deliver an exceptional user experience.
             </motion.p>
