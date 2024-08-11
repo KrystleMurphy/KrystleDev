@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Pages/Common/Navbar';
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
-import Portfolio from './Pages/Portfolio/Portfolio';
-import Contact from './Pages/Contact/Contact';
-import Footer from './Pages/Common/Footer';
-import Services from './Pages/Services/Services';
+import Navbar from '../src/components/Common/Navbar';
+import Home from '../src/components/Home/Home';
+import About from '../src/components/About/About';
+import Portfolio from '../src/components/Portfolio/Portfolio';
+import Contact from '../src/components/Contact/Contact';
+import Footer from '../src/components/Common/Footer';
+import Services from '../src/components/Services/Services';
 import './App.css';
 
 function App() {

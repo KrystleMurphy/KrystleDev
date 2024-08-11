@@ -1,0 +1,46 @@
+---
+import Navbar from '../components/Common/Navbar.astro';
+import Home from '../components/Home/Home.astro';
+import Footer from '../components/Common/Footer.astro';
+
+// Frontmatter (optional)
+title: 'Krystle.dev Portfolio Website'
+description: 'Portfolio website showcasing the work of Krystle Murphy, a front-end web developer based in Warwick.'
+---
+
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://krystle.dev/assets/metaImage.jpg" /> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://krystle.dev/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://krystle.dev/assets/metaImage.jpg" /> <!-- Replace with your actual image URL -->
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://krystle.dev/" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    
+        <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" /> <!-- Update this path if you have a favicon -->
+    
+    <!-- Add any additional meta tags or links to stylesheets here -->
+  </head>
+  <body>
+    <Navbar />
+    <Home />  <!-- Renders unique homepage content -->
+    <Footer />
+  </body>
+</html>
