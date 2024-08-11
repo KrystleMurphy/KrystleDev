@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {
+      colours: {
+      },
       fontFamily: {
         Monoton: ["'Monoton'", 'serif'],
         SpecialElite: ["'Special Elite'", 'serif']

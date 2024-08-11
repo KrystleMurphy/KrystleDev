@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const navigation = [
   {
@@ -31,22 +32,29 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50/50 mt-auto">
+    <motion.div 
+    className="relative isolate px-6 py-24 sm:py-32 lg:px-8"
+    initial={{ opacity: 0 }}  // Initial opacity
+    animate={{ opacity: 1 }}   // Final opacity
+    transition={{ duration: 1 }} // Duration of the fade-in
+  >
+    <footer className="bg-slate-950 mt-auto">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-black hover:text-cyan-600">
+            <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-500">
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="h-6 w-6" />
             </a>
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 text-gray-500">
+          <p className="text-center text-xs leading-5 text-slate-400">
             &copy; 2024 <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span> - All rights reserved.
           </p>
         </div>
       </div>
     </footer>
+    </motion.div>
   );
 }

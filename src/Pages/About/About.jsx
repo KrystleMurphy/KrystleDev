@@ -1,13 +1,13 @@
 
-import { DocumentArrowDownIcon } from '@heroicons/react/24/solid';
+import { DocumentIcon } from '@heroicons/react/24/solid';
 import ContactButton from '../Common/ContactButton';
 import CV from '../About/assets/CV.pdf'
 
 const cards = [
   {
-    name: 'Open CV',
-    description: 'Open CV',
-    icon: DocumentArrowDownIcon,
+    name: 'CV',
+    description: 'CV',
+    icon: DocumentIcon,
     href: CV
   },
   {
@@ -42,24 +42,24 @@ icon: (props) => (
 
 export default function About() {
   return (
-    <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8">
+    <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8 bg-slate-950">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="mx-auto max-w-2xl lg:mx-0 bg-slate-50/40 p-8 rounded-md">
-          <h2 className="text-4xl font-bold text-black sm:text-3xl">About <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span></h2>
-          <p className="mt-6 text-md leading-8 text-black">
-          Graduating from the University of Birmingham with a Trilogy Certificate in Front-End Design, I combine academic insight with practical experience. With a solid foundation in JavaScript and React, I craft dynamic, responsive user interfaces that leave a lasting impression. By integrating popular libraries and frameworks such as Bootstrap, Tailwind, jQuery, and DayJS, I ensure your projects leverage the latest web development technologies. My skills in utilizing third-party APIs enhance site functionality, while proficiency with NodeJS and NPM streamlines package management. Competent use of Git supports effective version control and collaboration. Known for relentless problem-solving and adaptability, I consistently deliver high-quality results with proven communication and teamwork skills.
+        <div className="mx-auto max-w-2xl lg:mx-0  p-8 rounded-md">
+          <h2 className="text-4xl font-bold text-slate-300 sm:text-3xl">About <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span></h2>
+          <p className="mt-6 text-md leading-8 text-slate-400">
+          With a solid foundation in JavaScript and React, I craft dynamic, responsive user interfaces that leave a lasting impression. By integrating reliable libraries and frameworks I ensure your projects leverage the latest web development technologies. My skills in utilizing third-party APIs enhance site functionality, while proficiency with NodeJS and NPM streamlines package management. Competent use of Git supports effective version control and collaboration. Known for relentless problem-solving and adaptability, I consistently deliver high-quality results with proven communication and teamwork skills.
           </p>
           <ContactButton/>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
   {cards.map((card) => (
-      <a key={card.name} href={card.href} target="_blank" rel="noopener noreferrer" className="text-black ">
+      <a key={card.name} href={card.href} target="_blank" rel="noopener noreferrer" className="text-slate-300 ">
         <span className="sr-only">{card.name}</span>
-    <div key={card.name} className="flex gap-x-4 rounded-xl bg-slate-50/40 p-6 ring-1 ring-inset ring-slate-50/50 hover:text-cyan-600">
+    <div key={card.name} className="flex gap-x-4 rounded-xl  p-6 ring-1 ring-inset ring-slate-50/50 hover:text-cyan-600">
         <card.icon aria-hidden="true" className="h-7 w-5 flex-none" />
       <div className="text-base leading-7">
         <h3 className="font-semibold">{card.name}</h3>
-        {/* <p className="mt-2 text-black">{card.description}</p> */}
+        {/* <p className="mt-2 text-slate-300">{card.description}</p> */}
       </div>
     </div>
       </a>

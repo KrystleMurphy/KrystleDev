@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layerbase {
+@layer base {
     body {
         font-family: 'Lexend', serif;
+        background: #020617 !important; 
     }
 }
