@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import ContactButton from '../Common/ContactButton';
 import CV from '../About/assets/CV.pdf';
 import { DocumentIcon } from '@heroicons/react/24/outline';
@@ -101,17 +102,6 @@ export default function Home() {
               through a collaborative process, resulting in bespoke, responsive
               websites that deliver an exceptional user experience.
             </motion.p>
-            {/* <motion.div
-              className="mt-8"
-              variants={fadeInVariants}
-            >
-              <figure className="border-l border-cyan-600 pl-8">
-                <blockquote className="text-xl font-semibold leading-8 tracking-tight text-slate-300">
-                  <p>Like the sound of what we do?</p>
-                </blockquote>
-                <ContactButton />
-              </figure>
-            </motion.div> */}
           </motion.div>
         </div>
         <motion.div
@@ -122,9 +112,11 @@ export default function Home() {
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
-              <motion.a key={link.name} href={link.href} variants={fadeInVariants}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
-              </motion.a>
+              <motion.div key={link.name} variants={fadeInVariants}>
+                <Link to={link.href} className="text-cyan-600 hover:text-cyan-500">
+                  {link.name} <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </motion.div>
             ))}
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
