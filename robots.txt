@@ -1,0 +1,12 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow:
+
+# Disallow specific directory if needed
+# Disallow: /private-directory/
+
+# Allow specific file if needed
+# Allow: /public-directory/allowed-file.html
+
+# Specify the location of your sitemap
+Sitemap: https://www.krystle.dev/sitemap.xml
