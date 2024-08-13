@@ -3,6 +3,6 @@ import react from '@astrojs/react';
 import sitemap from 'astro-sitemap';
 
 export default defineConfig({
-  integrations: [react(), sitemap()],
-  site: 'https://krystle.dev', 
+    integrations: [react(), sitemap()],
+    site: 'https://krystle.dev',
 });
