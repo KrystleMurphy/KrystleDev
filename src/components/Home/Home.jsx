@@ -78,61 +78,85 @@ export default function Home() {
   };
 
   return (
-    <div className="relative isolate overflow-hidden py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+    <>
+      {/* Schema Markup for Business */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Krystle Murphy",
+          "jobTitle": "Front-End Web Developer",
+          "url": "https://krystle.dev",
+          "sameAs": [
+            "https://www.linkedin.com/in/krystlemurphy",
+            "https://www.github.com/krystlemurphy"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Warwick",
+            "addressCountry": "UK"
+          },
+          "image": "https://krystle.dev/assets/headshot.jpg", // Update with the correct path
+          "description": "Krystle Murphy is a Front-End Web Developer specializing in bespoke and responsive websites."
+        })}
+      </script>
+
+      <div className="relative isolate overflow-hidden py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={containerVariants}
+            >
+              <motion.h1
+                className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+                variants={fadeInVariants}
+              >
+                Welcome to <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span>
+              </motion.h1>
+              <motion.p
+                className="mt-6 text-lg leading-8 text-gray-300"
+                variants={fadeInVariants}
+              >
+                I’m Krystle, a Front-End Web Developer and founder of{' '}
+               <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span>{' '}
+               in Warwick, UK. For websites where every detail is meticulously crafted
+               through a collaborative process, resulting in bespoke, responsive
+               websites that deliver an exceptional user experience.
+              </motion.p>
+            </motion.div>
+          </div>
           <motion.div
+            className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
           >
-            <motion.h2
-              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
-              variants={fadeInVariants}
-            >
-              Welcome to <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span>
-            </motion.h2>
-            <motion.p
-              className="mt-6 text-lg leading-8 text-gray-300"
-              variants={fadeInVariants}
-            >
-              I’m Krystle, a Front-End Web Developer and founder of{' '}
-              <span className="text-cyan-600 font-SpecialElite">Krystle.Dev</span>{' '}
-              in Warwick, UK. For websites where every detail is meticulously crafted
-              through a collaborative process, resulting in bespoke, responsive
-              websites that deliver an exceptional user experience.
-            </motion.p>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+              {links.map((link) => (
+                <motion.div key={link.name} variants={fadeInVariants}>
+                  <Link to={link.href} className="text-cyan-600 hover:text-cyan-500">
+                    {link.name} <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+            <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              {stats.map((stat) => (
+                <motion.div key={stat.name} className="flex flex-col-reverse" variants={fadeInVariants}>
+                  <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
+                  <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
+                    <a href={stat.href} target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-500">
+                      {stat.icon({})}
+                    </a>
+                  </dd>
+                </motion.div>
+              ))}
+            </dl>
           </motion.div>
         </div>
-        <motion.div
-          className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {links.map((link) => (
-              <motion.div key={link.name} variants={fadeInVariants}>
-                <Link to={link.href} className="text-cyan-600 hover:text-cyan-500">
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <motion.div key={stat.name} className="flex flex-col-reverse" variants={fadeInVariants}>
-                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
-                  <a href={stat.href} target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-500">
-                    {stat.icon({})}
-                  </a>
-                </dd>
-              </motion.div>
-            ))}
-          </dl>
-        </motion.div>
       </div>
-    </div>
+    </>
   );
 }
