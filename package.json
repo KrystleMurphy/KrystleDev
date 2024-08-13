@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.2",
+    "@astrojs/sitemap": "^3.1.6",
     "@formspree/react": "^2.5.1",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
@@ -34,7 +35,6 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
-    "vite": "^5.3.4",
-    "vite-plugin-prerender": "^1.0.8"
+    "vite": "^5.3.4"
   }
 }
