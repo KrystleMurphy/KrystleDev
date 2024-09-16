@@ -56,24 +56,16 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-  <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-    I’m Krystle Murphy, a dedicated Software Developer based in Warwick, UK.
-  </h1>
-  <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-    <p>
-      I’m a proactive and committed developer who believes in putting in the hard work to achieve impactful results. I pride myself on being a productive team member, always ready to roll up my sleeves and tackle challenges head-on. My goal is to provide exceptional value to any team, making me an excellent return on investment.
-    </p>
-    <p>
-      With a solid foundation in HTML, CSS, JavaScript, and React, I bring both technical knowledge and a passion for continuous improvement to every project. I’m eager to apply my coding skills in a dynamic environment where I can further hone my craft and contribute to meaningful digital experiences.
-    </p>
-    <p>
-      Currently, I’m expanding my skill set by taking the Python and Apps course with Code First Girls, demonstrating my commitment to continuous learning and staying at the forefront of technology. I’m always on the lookout for opportunities to grow and evolve as a developer, embracing every new challenge as a chance to learn and improve.
-    </p>
-    <p>
-      Whether it’s collaborating with cross-functional teams or independently diving into code, I thrive on turning ideas into functional, user-friendly interfaces. My journey from teaching and leadership roles into web development has equipped me with a unique perspective and a versatile skill set that adds value to any project.
-    </p>
-  </div>
-</div>
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            I’m Krystle Murphy, a Software Developer based in Warwick, UK.
+          </h1>
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <p> I’m proactive, motivated, and driven by a commitment to quality outcomes. I believe in putting in the hard work to achieve impactful results and pride myself on being a productive team member, always ready to tackle challenges head-on. My goal is to provide exceptional value to any team, making me an excellent return on investment. </p> 
+            <p> With a solid foundation in JavaScript, React, and Next.js, I bring technical knowledge and a passion for continuous improvement to every project. I’m eager to apply my coding skills in a dynamic environment where I can further hone my craft and contribute to meaningful digital experiences. </p> 
+            <p> Currently, I’m expanding my skill set by taking the Python and Apps course with Code First Girls, reflecting my commitment to continuous learning and staying at the forefront of technology. I’m always on the lookout for opportunities to grow as a developer, embracing new challenges as chances to learn and improve. </p> 
+            <p> Whether collaborating with cross-functional teams or independently diving into code, I thrive on turning ideas into functional, user-friendly interfaces. My journey from teaching and leadership roles into web development has equipped me with a unique perspective and a versatile skill set that adds value to any project. </p>
+          </div>
+        </div>
 
         <div className="lg:pl-20">
           <ul role="list">
@@ -88,7 +80,7 @@ export default function About() {
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-             Krystle@Krystle.dev
+              Krystle@Krystle.dev
             </SocialLink>
           </ul>
         </div>

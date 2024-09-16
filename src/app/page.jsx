@@ -58,7 +58,7 @@ export default async function Home() {
             Krystle: Developer, Tech Enthusiast, and Problem Solver.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I’m Krystle, a dedicated Developer from Warwick, UK, with a passion for creating responsive and engaging digital experiences. With expertise in HTML, CSS, JavaScript, and React, I transform ideas into functional, user-friendly interfaces. I’m driven by a love for problem-solving and collaboration, always striving to deliver high-quality solutions that make a difference.
+          Hi, I’m Krystle, a Developer based in Warwick, UK. With strong skills in JavaScript, React, and Node, I focus on applying core development concepts to create responsive and efficient solutions. Driven by a commitment to quality outcomes, I apply problem-solving skills and a collaborative approach to deliver results that enhance the user experience.
           </p>
 
           <div className="mt-6 flex gap-6">
